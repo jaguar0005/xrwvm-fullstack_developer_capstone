@@ -1,27 +1,25 @@
-Run actions/checkout@v3
-  Syncing repository: jaguar0005/xrwvm-fullstack_developer_capstone
-  Getting Git version info
-  Copying '/home/runner/work/_actions/actions/checkout/v3' to '/home/runner/work/_actions/actions/checkout/v3'
-  /usr/bin/git version
-  git version 2.40.1
-  Cloning the remote repository
-  /usr/bin/git clone --depth=1 --no-single-branch https://github.com/jaguar0005/xrwvm-fullstack_developer_capstone.git /home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone
-  Checking out the ref
-Run actions/setup-python@v4
-  Installed versions
-  Successfully setup Python 3.10.12
-Run Linting and Tests
-  flake8 --max-line-length=120 server/djangoapp
-  0 errors found
-  python server/manage.py test
-  Creating test database for alias 'default'...
-  System check identified no issues (0 silenced).
-  Ran 5 tests in 0.042s
-  OK
-  Destroying test database for alias 'default'...
-Run Build Frontend
-  npm --prefix server/frontend install
-  npm --prefix server/frontend run build
-  Build succeeded. Static files generated.
-Post job cleanup.
-Workflow run completed successfully. All checks passed.
+gh run view 18836357268 --verbose
+
+✓ main Lint Code · 18836357268
+Triggered via push about 7 minutes ago
+
+JOBS
+✓ Lint Python Files in 16s (ID 53738140285)
+  ✓ Set up job
+  ✓ Checkout Repository
+  ✓ Set up Python
+  ✓ Install dependencies
+  ✓ Print working directory
+  ✓ Run Linter
+  ✓ Post Set up Python
+  ✓ Post Checkout Repository
+  ✓ Complete job
+✓ Lint JavaScript Files in 11s (ID 53738140290)
+  ✓ Set up job
+  ✓ Checkout Repository
+  ✓ Install Node.js
+  ✓ Install JSHint
+  ✓ Run Linter
+  ✓ Post Install Node.js
+  ✓ Post Checkout Repository
+  ✓ Complete job
